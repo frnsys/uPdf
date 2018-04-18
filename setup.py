@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='updf',
-    version='1.0.0',
+    version='0.0.2.4',
     description='Tool for manipulating PDFs',
     author='Lorenzo Carbonell Cerezo',
     author_email='lorenzo.carbonell.cerezo@gmail.com',
