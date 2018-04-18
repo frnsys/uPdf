@@ -8,7 +8,7 @@ setup(
     author_email='lorenzo.carbonell.cerezo@gmail.com',
     license='GPLv3',
     zip_safe=True,
-    package_data={'updf': ['data']},
+    package_data={'updf': ['data/**/*']},
     include_package_data=True,
     packages=['updf'],
     install_requires=[
