@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# comun.py
+# updf.py
 #
 # Copyright (C) 2012 Lorenzo Carbonell
 # lorenzo.carbonell.cerezo@gmail.com
