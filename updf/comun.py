@@ -34,15 +34,10 @@ import locale
 import gettext
 ######################################
 
-def is_package():
-    return __file__.find('src') < 0
-
-######################################
-
 PARAMS = {	'first-time':True,
 			'version':''
 			}
-			
+
 RESOLUTION = 110.0/72.0
 
 
@@ -55,19 +50,12 @@ CONFIG_APP_DIR = os.path.join(CONFIG_DIR, APP)
 CONFIG_FILE = os.path.join(CONFIG_APP_DIR, APP_CONF)
 #########################################
 # check if running from source
-if is_package():
-    ROOTDIR = '/usr/share/'
-    LANGDIR = os.path.join(ROOTDIR, 'locale-langpack')
-    APPDIR = os.path.join(ROOTDIR, APP)
-    ICONDIR = os.path.join(APPDIR, 'icons')
-    CSSDIR = os.path.join(APPDIR,'css')
-else:
-    VERSION = VERSION + '-src'
-    ROOTDIR = os.path.dirname(__file__)
-    LANGDIR = os.path.normpath(os.path.join(ROOTDIR, '../template1'))
-    ICONDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/icons'))
-    CSSDIR = os.path.normpath(os.path.join(ROOTDIR, '../data/css'))
-    APPDIR = ROOTDIR
+VERSION = VERSION + '-src'
+ROOTDIR = os.path.dirname(__file__)
+LANGDIR = os.path.normpath(os.path.join(ROOTDIR, 'template1'))
+ICONDIR = os.path.normpath(os.path.join(ROOTDIR, 'data/icons'))
+CSSDIR = os.path.normpath(os.path.join(ROOTDIR, 'data/css'))
+APPDIR = ROOTDIR
 ####
 ICON = os.path.join(ICONDIR,'updf.svg')
 CSSFILE = os.path.join(CSSDIR,'style.css')
