@@ -11,6 +11,6 @@ setup(
     ],
     entry_points='''
         [console_scripts]
-        updf=src.updf:main
+        updf=updf.updf:main
     ''',
 )
