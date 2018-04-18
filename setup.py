@@ -6,7 +6,7 @@ setup(
     author='Lorenzo Carbonell Cerezo',
     author_email='lorenzo.carbonell.cerezo@gmail.com',
     license='GPLv3',
-    packages=['src'],
+    packages=['updf'],
     install_requires=[
     ],
     entry_points='''
