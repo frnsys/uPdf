@@ -988,9 +988,9 @@ class UPDF(Gtk.Window):
 			self.miniview.unselect()
 
 def main():
-	ss = splashscreen.SplashScreen()
-	splashscreen.wait(3)
-	ss.destroy()
+	# ss = splashscreen.SplashScreen()
+	# splashscreen.wait(3)
+	# ss.destroy()
 	main_without_splash_screen()
 
 def main_without_splash_screen():
